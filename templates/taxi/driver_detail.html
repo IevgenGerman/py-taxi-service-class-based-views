@@ -18,7 +18,7 @@
         {{ car.model }} - (Manufacturer: {{ car.manufacturer.name }})
       </li>
     {% empty %}
+      <li>No cars assigned to this driver.</li>
     {% endfor %}
   </ul>
-  {% include "includes/pagination.html" %}
 {% endblock %}
